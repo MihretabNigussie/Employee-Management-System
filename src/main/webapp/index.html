@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body
+    class="container-fluid"
+    style="width: 40rem; display: grid; place-items: center; min-height: 100vh"
+  >
+    <div>
+      <h2 class="bg-danger text-white text-center">
+        Employee Management System
+      </h2>
+      <form action="addemployee" method="post">
+        <table class="table table-hover table-bordered">
+          <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" /></td>
+          </tr>
+          <tr>
+            <td>Designation</td>
+            <td><input type="text" name="designation" /></td>
+          </tr>
+          <tr>
+            <td>Salary</td>
+            <td><input type="text" name="salary" /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="submit"
+                value="Add Employee"
+                class="btn btn-sm btn-info"
+              />
+            </td>
+            <td>
+              <input type="reset" value="cancel" class="btn btn-sm btn-info" />
+            </td>
+          </tr>
+        </table>
+        <a href="employeeslist">Employee List</a>
+      </form>
+    </div>
+  </body>
+</html>
